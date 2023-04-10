@@ -1,0 +1,203 @@
+:root {
+  --color-red: hsl(0, 100%, 74%);
+  --color-green: hsl(154, 59%, 51%);
+  --color-green-light: #77E2B4;
+  --color-blue: hsl(248, 32%, 49%);
+  --color-purple: #5D54A3;
+  --color-darkblue: hsl(249, 10%, 26%);
+  --color-blue: hsl(246, 25%, 77%);
+  --shadow-light: 0px 8px 0 rgba(0,0,0,.4);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/bg-intro-desktop.png) var(--color-red);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    padding-bottom: 11rem;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 115em;
+  min-height: 48rem;
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+.text__container {
+  flex: 1.1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .text__container {
+    flex: 1;
+    text-align: center;
+  }
+}
+.text__container__heading {
+  font-size: 4.2rem;
+  padding-right: 1rem;
+  padding-left: 3.5rem;
+  line-height: 5rem;
+  margin-bottom: 3rem;
+}
+@media only screen and (max-width: 600px) {
+  .text__container__heading {
+    font-size: 2.7rem;
+    line-height: normal;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+.text__container__paragraph {
+  font-size: 1.5rem;
+  padding-right: 2.2rem;
+  padding-left: 3.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .text__container__paragraph {
+    padding: 0;
+  }
+}
+
+.form__container {
+  background-color: #fff;
+  flex: 0.822;
+  box-shadow: var(--shadow-light);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  padding: 1.3rem 0;
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  .form__container {
+    flex: 1;
+    margin-top: 13rem;
+  }
+}
+.form__container__error {
+  display: none;
+  color: var(--color-red);
+  font-weight: 900;
+  width: fit-content;
+  margin-top: 0.7rem;
+  margin-bottom: -1.3rem;
+  align-self: flex-end;
+}
+.form__container__free {
+  width: 100%;
+  height: 5.5rem;
+  background: var(--color-purple);
+  position: absolute;
+  top: -8rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-light);
+  color: #fff;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__container__free span {
+  font-weight: 800;
+}
+@media only screen and (max-width: 600px) {
+  .form__container__free {
+    height: 7.5rem;
+    text-align: center;
+    padding: 0 13rem;
+    top: -10rem;
+  }
+}
+.form__container__form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 90%;
+}
+.form__container__input {
+  background-color: #fff;
+  height: 5rem;
+  font-family: inherit;
+  border-radius: 8px;
+  padding: 0 1rem;
+  border: none;
+  outline: 1px solid var(--color-blue);
+  color: var(--color-darkblue);
+  font-weight: 700;
+  position: relative;
+  background-image: none;
+  background-size: 5%;
+  background-position: 95%;
+  background-repeat: no-repeat;
+}
+.form__container__input:focus {
+  outline: 1px solid var(--color-darkblue);
+}
+.form__container__input:not(:last-child) {
+  margin-top: 3rem;
+}
+.form__container__submit {
+  height: 5rem;
+  border: none;
+  background-color: var(--color-green);
+  border-radius: 8px;
+  margin-top: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  cursor: pointer;
+}
+.form__container__submit:hover {
+  background-color: var(--color-green-light);
+}
+.form__container__warning {
+  font-size: 1.2rem;
+  align-self: center;
+  margin-top: 0.8rem;
+}
+.form__container__warning:not(span) {
+  opacity: 0.5;
+}
+.form__container__warning--emphasis {
+  color: red;
+  font-weight: 800;
+}
+@media only screen and (max-width: 600px) {
+  .form__container__warning {
+    margin-top: 1.4rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
