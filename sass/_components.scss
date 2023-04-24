@@ -1,10 +1,15 @@
 .text__container{
     flex: 1.1;
     color: white;
+    
 
+    @media only screen and (max-width: $bp-tablet){
+        margin-bottom: 13rem;
+    }
     @media only screen and (max-width: $bp-phone){
         flex: 1;
         text-align: center;
+        margin-bottom: 5rem;
     }
 
     

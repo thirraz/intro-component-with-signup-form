@@ -40,14 +40,16 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
-  max-width: 115em;
+  width: 115em;
+  max-width: 90%;
   min-height: 48rem;
   padding-top: 2rem;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .container {
     flex-direction: column;
     width: 90%;
+    min-height: 100vh;
   }
 }
 
@@ -58,10 +60,16 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+@media only screen and (max-width: 900px) {
+  .text__container {
+    margin-bottom: 13rem;
+  }
+}
 @media only screen and (max-width: 600px) {
   .text__container {
     flex: 1;
     text-align: center;
+    margin-bottom: 5rem;
   }
 }
 .text__container__heading {

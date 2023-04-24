@@ -1,12 +1,14 @@
 .container{
     display: flex;
     justify-content: space-between;
-    max-width: 115em;
+    width: 115em;
+    max-width: 90%;
     min-height: 48rem;
     padding-top: 2rem;
 
-    @media only screen and (max-width: $bp-phone){
+    @media only screen and (max-width: $bp-tablet){
         flex-direction: column;
         width: 90%;
+        min-height:100vh;
     }
 }
